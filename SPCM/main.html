@@ -1,9 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+	<title>SPCM</title>
+	<link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div>
+		<div id="login">
+			ID<input type="text" name="id" required>
+			PW<input type="password" name="pw" required>
+			<button>login</button>
+		</div>
+	</div>
+	<h1>SPCM</h1>
+	<h6>SmartPhone Case Mall</h6>
+	<div>
+		<img src="1.jpg">
+	</div>
+	<div id="choice">
+		<ul>
+			<li><a href="">111111</a></li>
+			<li><a href="">222222</a></li>
+			<li><a href="">333333</a></li>
+			<li><a href="">444444</a></li>
+		</ul>
+	</div>
+	<div>
+	</div>
+	<nav>
+		<ul>
+			<li class="model">iPhone</li>
+			<div>
+				<ul>
+					<li>xr</li>
+					<li>xs</li>
+					<li>x</li>
+				</ul>
+			</div>
+			
+			<li class="model">Galaxy</li>
+			<div>
+				<ul>
+					<li>10</li>
+					<li>note9</li>
+					<li>8</li>
+				</ul>
+			</div>
+			
+			<li class="model">LG</li>
+			<div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			
+		</ul>
+	</nav>
+	<div id="phonelist">
+		<table border="1">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<script>
+	var coll = document.getElementsByClassName("model");
+	var i;
 
-    </head>
-    <body>
-        <p>test 3</p>
-    </body>
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		var content = this.nextElementSibling;
+		if (content.style.display === "none") {
+		  content.style.display = "block";
+		} else {
+		  content.style.display = "none";
+		}
+	  });
+	}
+	</script>
+</body>
 </html>

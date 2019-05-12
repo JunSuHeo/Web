@@ -1,0 +1,49 @@
+#choice ul{
+	border:1px solid black;
+	padding:10px;
+}
+#choice ul li{
+	text-decoration:none;
+	display:inline;
+	padding:10px;
+	text-align:center;
+}
+h1{
+	text-align:center;
+}
+h6{
+	text-align:center;
+}
+a{
+	text-decoration:none;
+}
+#login{
+	top:10px;
+	right:10px;
+}
+#login input{
+	width:80px;
+	margin:5px 10px;
+}
+nav{
+	float:left;
+	width:20%;
+}
+nav ul li{
+	cursor: pointer;
+}
+#phonelist{
+	background-color:blue;
+	width:80%;
+	float:right;
+}
+#phonelist table{
+	margin: 0 auto;
+	border-spacing:20px;
+}
+#phonelist table td{
+	width:150px;
+	height:150px;
+	margin:5px;
+	background-color:yellow;
+}
